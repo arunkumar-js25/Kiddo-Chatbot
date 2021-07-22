@@ -1,7 +1,5 @@
 # Kiddo-Chatbot
 
-# Kiddo-Chatbot
-
 '''
 Author  @Arun Kumar
 Date    @11-OCT-2020
