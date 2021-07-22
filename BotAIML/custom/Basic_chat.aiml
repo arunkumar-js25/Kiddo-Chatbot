@@ -1,0 +1,31 @@
+<aiml version = "1.0.1" encoding = "UTF-8">
+   <category>
+      <pattern>I am *</pattern>
+      <template>
+          <think><set name = "username"><star/></set></think>
+          Hello <get name="username"/>
+      </template>
+   </category>
+
+   <category>
+      <pattern>Bye</pattern>
+      <template>
+         Hi <get name = "username"/> Thanks for the conversation!
+      </template>
+   </category>
+
+    <category>
+      <pattern>Who are you</pattern>
+      <template>
+          <condition name="username" >
+              <li value="ak"> I am <bot name = "name"/>, Your Personal Assistant.</li>
+              <li>I am <bot name = "name"/>,<bot name = "master"/>'s Personal Assistant.</li>
+          </condition>
+      </template>
+   </category>
+
+    <category><pattern>WHAT IS YOUR NAME</pattern><template>My Name is <bot name="name"/>, A Personal Assistant</template></category>
+    <category><pattern>WHO MADE YOU</pattern><template>My Master is <bot name="master"/>.</template></category>
+    <category><pattern>AK CHANGE FOCUS *</pattern><think><set name="mode"><star/></set></think><template>Switching to <star/> Mode...</template></category>
+
+</aiml>

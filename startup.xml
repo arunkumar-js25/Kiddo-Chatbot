@@ -1,0 +1,13 @@
+<aiml version="1.0.1" encoding="UTF-8"><!-- startup.xml -->
+
+    <category>
+        <pattern>LOAD BRAIN</pattern>           <!-- Pattern to match in user input. If user enters "LOAD BRAIN" -->
+
+        <template>                              <!-- Template is the response to the pattern -->
+            <!--learn>Details.aiml</learn-->    <!-- This learn an AIML file -->
+            <learn>BotAIML/aiml/*</learn>
+            <learn>BotAIML/custom/*</learn>
+        </template>
+    </category>
+
+</aiml>

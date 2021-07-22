@@ -1,0 +1,11 @@
+<aiml version = "1.0.1" encoding = "UTF-8">
+   <category>
+       <pattern>LOAD CONFIG</pattern>
+      <template>
+       <think>
+           <set name = "mode">NORMAL</set>
+       </think>
+          Loaded Basic Details..!
+       </template>
+   </category>
+</aiml>
